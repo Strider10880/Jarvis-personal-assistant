@@ -1,5 +1,5 @@
 /**
- * CMOS society
+ * COSS society
  * logs google search engine code for the caller parent subprocess
  * author: codeZero
  */
@@ -48,7 +48,7 @@ process.argv.forEach((val, index, array) => {
         driver.get(url).then(() => {
             driver.findElement(By.tagName('body')).then(cc => {
                 cc.getAttribute('innerHTML').then(result => {
-                    console.log(result);
+                    console.log("result::: ", result);
                     driver.quit();
                 });
             });
